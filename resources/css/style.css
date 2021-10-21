@@ -1,0 +1,628 @@
+/* ======================================
+
+Template Name: Portfolio_Landing Page
+Template URI: G:\New Tutorial\WD\UY Lab\Files\02-Standard PSD\04-Veer
+Author: Dedarul Hasan
+Author URI: https://www.facebook.com/WhiteDevil2k/
+Version: 1.0
+Description: An awesome personal blog template.
+Support: mddedarulhasan@gmail.com
+Color: #31d7ce
+
+========================================*/
+
+/* ======================================
+
+CSS INDEX
+---------
+1.  Google Fonts
+2.  Common Css
+3.  Reusable
+4.  Menubar Css
+5.  Banner Css
+6.  About Css
+7.  Services Css
+8.  Work Css
+9.  Counting Css
+10. Blog Css
+11. JOIN_US Css
+12. Footer Css
+
+========================================*/
+
+/*==================================== 
+            1. Google Font Css
+====================================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/*==================================== 
+            2. Common Css
+====================================*/
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+    font-size: 62.5%;
+}
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/*==================================== 
+            3. Reusable Css Start
+====================================*/
+
+section {
+    padding: 2rem 9%;
+}
+/*==================================== 
+            
+        4. NAVBAR Css Start
+
+====================================*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+}
+.header .logo {
+    font-size: 1.6rem;
+    display: flex;
+}
+.header .logo .serviceMenu {
+    padding-top: 2rem;
+    padding-left: 5rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.header .navbar a {
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    color: #000;
+    font-weight: 500;
+}
+.header .last_menu a {
+    font-size: 1.6rem;
+    margin: 0 3rem;
+    color: #000;
+    font-weight: 500;
+}
+.header .last_menu a:last-child i {
+    color: #b00000;
+}
+.header .last_menu::before {
+    position: relative;
+}
+.header .last_menu::before {
+    position: absolute;
+    content: "";
+    top: 6.2%;
+    left: 77.5%;
+    height: 15px;
+    width: 2px;
+    background-color: #dad8d8;
+}
+.header .navbar a:hover {
+    border-bottom: 0.2rem solid #b00000;
+}
+.header .last_menu a:nth-child(1):hover {
+    border-bottom: 0.2rem solid #b00000;
+}
+/*==================================== 
+            
+        4. BANNER Css Start
+
+====================================*/
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+.display-1 {
+    font-size: 7rem;
+}
+.banner_menu a {
+    font-size: 1.4rem;
+    padding: 0 0.7rem;
+}
+.banner_menu a:nth-child(1) {
+    font-family: "Poppins";
+    font-weight: 600;
+    color: #b00000;
+}
+.banner_menu a:nth-child(2),
+.banner_menu a:nth-child(3),
+.banner_menu a:nth-child(4) {
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #d6d4d4;
+}
+.banner_menu {
+    position: relative;
+}
+.banner_menu::before {
+    position: absolute;
+    content: "";
+    top: 4%;
+    left: 1.8%;
+    height: 0.1rem;
+    width: 3.7rem;
+    background-color: #b00000;
+}
+.banner_menu::after {
+    position: absolute;
+    content: "";
+    top: 4%;
+    left: 6.7%;
+    height: 0.1rem;
+    width: 17rem;
+    background-color: #e5e5e5;
+}
+.banner_menu h2 {
+    padding-top: 3rem;
+}
+.banner_menu p {
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    margin-top: 3rem;
+}
+.banner_btn {
+    margin-top: 5rem;
+}
+.banner_btn a {
+    padding: 1rem 3rem;
+    color: #000 !important;
+    border: 0.1rem solid #000;
+    border-radius: 0.5rem;
+    font-family: "Poppins";
+    font-weight: 400 !important;
+    margin-right: 2rem;
+}
+.banner_btn a:hover {
+    background-color: #b00000;
+    color: #fff !important;
+    border: none;
+    border: 0.1rem solid #b00000;
+}
+
+.hosting_con {
+    max-width: 60rem;
+}
+.hosting_con h1 {
+    font-size: 4rem;
+}
+.hosting_con p {
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    text-align: justify;
+}
+.hosting_data {
+    margin: 5rem 0;
+}
+.hos_top {
+    display: flex;
+    gap: 6rem;
+}
+.hos_bottom {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.hos_top img {
+    padding: 0 2rem;
+}
+.hos_bottom img {
+    padding: 0 2rem;
+}
+
+/*==================================== 
+            
+        5. SERVICE Css Start
+
+====================================*/
+.service {
+    margin-bottom: 10rem;
+}
+.icon_section {
+    display: flex;
+}
+.icons {
+    width: 50rem;
+    text-align: center;
+}
+.icon_con {
+    margin-top: 1.5rem;
+}
+.icon_con h2 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.icon_con p {
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 1rem 3rem 0;
+}
+
+/*==================================== 
+            
+        6. PACKAGE Css Start
+
+====================================*/
+.package_con {
+    text-align: center;
+}
+.package_con h1 {
+    font-size: 3rem;
+    font-family: "poppins";
+    font-weight: 600;
+}
+.package_con p.choose {
+    font-size: 1.6rem;
+    font-family: "poppins";
+    font-weight: 400;
+    padding: 2rem 0;
+}
+.package_con .monthly {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.package_con p.monthly {
+    margin: 4rem 0;
+}
+.package_con p span.offer {
+    background-color: #ffe87a;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+    margin-left: 2rem;
+}
+.package_con p span.year {
+    margin-left: 10rem;
+}
+.pack_plan ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pack_plan ul li {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 3rem 0;
+}
+.pack_plan ul li a {
+    padding: 0 14rem;
+    border-bottom: 0.3rem solid #c4c4c4;
+    color: #000;
+    padding-bottom: 0.4rem;
+}
+.pack_plan ul li a.active {
+    border-bottom: 0.3rem solid #b00000;
+}
+
+.package_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.package_container span label {
+    width: 5rem;
+    height: 2.3rem;
+    background-color: #b00000;
+    display: block;
+    margin: 0 2rem;
+    border-radius: 2rem;
+    position: relative;
+}
+.package_container span label .ball {
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10.9%;
+    left: 6%;
+    display: block;
+}
+.package_container span.offers {
+    background-color: #ffe87a;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.container {
+    max-width: 109.7rem;
+    margin: auto;
+    width: 100%;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-box {
+    background-color: #fff;
+    border: 0.1rem solid #c4c4c4;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 4rem;
+    transition: 1s;
+}
+.price-box h4 {
+    font-size: 2rem;
+}
+.price-box p {
+    font-size: 1.3rem;
+    padding-top: 0.4rem;
+}
+.price-box span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    display: block;
+}
+.price-box button {
+    border-radius: 1rem;
+    padding: 0.9rem 0;
+    width: 100%;
+    margin: 1.5rem 0;
+    border: 0.2rem solid #000;
+    font-weight: 600;
+    font-family: "Poppins";
+    font-size: 1.2rem;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.price-box:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.price-box:hover button {
+    background: #b00000;
+    color: #fff;
+    border: 0.2rem solid #b00000;
+    transition: 0.4s;
+}
+.price-box ul li {
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
+}
+.price-box ul li i {
+    padding-right: 2rem;
+}
+
+/*==================================== 
+            
+        7. PACKAGE Css Start
+
+====================================*/
+.con_customer h1 {
+    font-family: "inter";
+    font-weight: 800;
+    font-size: 5rem;
+}
+.con_customer p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.content_left {
+    position: relative;
+}
+.content_left img {
+    position: absolute;
+    top: -18%;
+    left: -11%;
+}
+.intro_card_left {
+    margin-left: 20rem;
+    padding: 2rem 4rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.75);
+}
+.intro_card_con {
+    position: relative;
+}
+.intro_card_con img {
+    position: absolute;
+    top: 0%;
+    left: -10%;
+}
+.intro_card_con p {
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.intro_card_con h4 {
+    font-family: "Inter";
+    font-weight: 700;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+}
+.intro_card_con span {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #969bab;
+    margin-bottom: 5rem;
+    display: block;
+}
+.intro_card_right {
+    padding: 2rem 4rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.75);
+}
+.web_host_top img {
+    padding: 0 1rem;
+    width: 120px;
+}
+.web_host_bottom img {
+    padding: 0 1rem;
+    width: 120px;
+}
+.web_content h1 {
+    font-family: "inter";
+    font-weight: 800;
+    font-size: 4rem;
+}
+.web_content p {
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding-right: 14rem;
+    padding-top: 1rem;
+}
+
+/*==================================== 
+            
+        8. GET IN TOUCH Css Start
+
+====================================*/
+.getintouch {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.get_content {
+    background-color: #f7fafe;
+    padding: 5rem 0;
+    position: relative;
+}
+.get_content h1 {
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 4rem;
+    padding: 2rem 22rem;
+    color: #2e2e2e;
+}
+.get_button {
+    display: inline-flex;
+    background-color: #b00000;
+    padding: 1.4rem 2.3rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.get_button i,
+.get_button a {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: "poppins";
+    font-weight: 400;
+}
+.get_button i {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+.get_button:hover {
+    background-color: #940505;
+}
+.get_content span.tri_top {
+    position: absolute;
+    border-bottom: 40px solid #b00000;
+    border-left: 40px solid transparent;
+    width: 0;
+    top: 0%;
+    left: 40%;
+    display: block;
+}
+.get_content span.tri_right {
+    position: absolute;
+    border-bottom: 60px solid #b00000;
+    border-left: 60px solid transparent;
+    width: 0;
+    bottom: 7%;
+    right: -2%;
+    display: block;
+}
+.get_content span.tri_left {
+    position: absolute;
+    border-bottom: 40px solid #b00000;
+    border-right: 30px solid transparent;
+    width: 0;
+    bottom: 15%;
+    left: -1%;
+    display: block;
+}
+
+footer {
+    background-color: #b00000;
+    padding: 10rem 0;
+}
+.footer_flex {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.footer_service {
+    color: #fff;
+}
+.footer_logo p {
+    font-family: "inter";
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    color: #e5e5e5;
+    line-height: 1.6;
+}
+
+.footer_services,
+.footer_hosting,
+.footer_company,
+.footer_help {
+    margin-left: 10rem;
+}
+.footer_services h4,
+.footer_hosting h4,
+.footer_company h4,
+.footer_help h4 {
+    font-family: "inter";
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+}
+.footer_services ul li,
+.footer_hosting ul li,
+.footer_company ul li,
+.footer_help ul li {
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    color: #e5e5e5;
+}
+p.love {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 10rem;
+    font-family: "inter";
+}

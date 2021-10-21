@@ -1,0 +1,148 @@
+/*==================================== 
+            1. Media Query 480px
+====================================*/
+@media screen and (max-width: 480px) {
+    .banner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .banner_menu {
+        max-width: 100%;
+    }
+    .banner_menu h2 {
+        font-size: 3rem;
+    }
+    .banner_btn {
+        margin-bottom: 4rem;
+    }
+    .banner_btn a {
+        padding: 1rem 2rem;
+    }
+    .banner_img img {
+        width: 100%;
+    }
+    /*==================================== 
+            2. Hosting css start
+    ====================================*/
+    .hosting_data {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .hosting_provider {
+        margin-top: 3rem;
+    }
+    .hos_top {
+        gap: 2rem;
+    }
+    .hos_top img,
+    .hos_bottom img {
+        width: 13rem;
+    }
+    .banner_menu::before {
+        top: 6%;
+        left: 3.8%;
+    }
+    .banner_menu::after {
+        top: 6%;
+        left: 17.7%;
+    }
+    /*==================================== 
+            3. Icon css start
+    ====================================*/
+    .icon_section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .icons {
+        flex-basis: 19rem;
+    }
+    .icons img {
+        width: 30%;
+    }
+    .icon_con {
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+    }
+    .icon_con h2 {
+        font-size: 1.2rem;
+    }
+    .icon_con p {
+        padding: 1rem 0;
+    }
+    .service {
+        margin-bottom: 2rem;
+    }
+
+    .pack_plan ul li a {
+        padding: 0 6rem;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+    }
+    .price-box {
+        margin: 1rem;
+    }
+    .price-box ul li i {
+        padding-right: 0.4rem;
+    }
+    .price-box ul li {
+        font-size: 1rem;
+    }
+    .price-box button {
+        font-size: 1rem;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .content_left img {
+        left: -2%;
+    }
+    .con_customer {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .intro_card_left {
+        margin: 0;
+        width: 100% !important;
+        margin-bottom: 4rem;
+    }
+    .intro_card_right {
+        margin: 0;
+        width: 100% !important;
+        margin-bottom: 4rem;
+    }
+    .get_content h1 {
+        padding: 0;
+        font-size: 3rem;
+    }
+    .get_button {
+        padding: 1rem 2rem;
+    }
+    .get_button i,
+    .get_button a {
+        font-size: 1rem;
+    }
+    .footer_flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 2rem 4rem;
+    }
+    .footer_service {
+        margin-top: 2rem;
+    }
+    p.love {
+        text-align: center;
+        margin: 0;
+    }
+}
